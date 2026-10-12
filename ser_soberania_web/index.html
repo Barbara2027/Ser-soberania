@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f8f6f1">
+<meta name="description" content="Ser Soberanía — Punto Infinito. Dossier, protocolo de admisión e investigación.">
+<title>Ser Soberanía | Punto Infinito</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#f8f6f1;--paper:#fffefa;--ink:#25272a;--muted:#686a6b;--rose:#b77e78;--copper:#b98670;--line:rgba(138,112,102,.25);--night:#17252d}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--ivory);color:var(--ink);font-family:Montserrat,Arial,sans-serif;font-weight:300;line-height:1.75}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}.serif,h1,h2,h3,.brand{font-family:Cinzel,Georgia,serif;font-weight:400}h1,h2,h3,p{margin-top:0}h1,h2{line-height:1.2}h2{font-size:clamp(1.8rem,3vw,3rem);margin-bottom:1rem}p{color:var(--muted)}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:.7rem;font-weight:500;color:var(--rose)}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}
+header.nav{height:84px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 max(24px,calc((100vw - 1160px)/2));background:rgba(248,246,241,.92);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;backdrop-filter:blur(12px)}.brand{font-size:1.15rem;letter-spacing:.06em;color:#9d6b66;white-space:nowrap}.navlinks{display:flex;gap:30px;font-size:.72rem;letter-spacing:.13em;text-transform:uppercase}.navlinks a:hover{color:var(--rose)}
+.hero{padding:42px 0 78px}.hero-image{width:100%;height:clamp(280px,48vw,590px);object-fit:cover;object-position:center;border-radius:4px 4px 90px 4px;box-shadow:0 24px 60px rgba(34,43,47,.12)}.hero-copy{max-width:850px;text-align:center;margin:58px auto 0}.hero h1{font-size:clamp(2.5rem,6.5vw,5.6rem);letter-spacing:.015em;margin:14px 0 22px;color:#a9706c}.hero p{font-size:clamp(1rem,1.6vw,1.18rem);max-width:720px;margin:0 auto 30px}.actions{display:flex;justify-content:center;flex-wrap:wrap;gap:14px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 25px;border:1px solid var(--rose);border-radius:99px;background:var(--rose);color:white;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:500;transition:.25s}.btn:hover{transform:translateY(-2px);background:#98645f}.btn.secondary{background:transparent;color:#98645f}.btn.secondary:hover{background:#98645f;color:white}.section{padding:100px 0}.section-head{max-width:680px;margin-bottom:42px}.section-head.center{text-align:center;margin:0 auto 46px}.founder-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(32px,7vw,90px)}.portrait{width:100%;height:clamp(400px,54vw,630px);object-fit:cover;object-position:center 25%;border-radius:42% 42% 8px 8px;box-shadow:20px 24px 60px rgba(54,47,42,.13)}.founder-copy h2{color:#a9706c}.founder-copy h3{font-family:Montserrat,sans-serif;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#8e8d89;margin-bottom:28px}.founder-copy p{font-size:.96rem}.banner{padding:0 0 40px}.banner img{width:100%;max-height:460px;object-fit:cover;border-radius:4px 80px 4px 4px}.docs{background:linear-gradient(145deg,#fffefa,#efede7);border:1px solid #fff;border-radius:60px 110px 50px 80px;padding:clamp(32px,7vw,78px);box-shadow:14px 18px 55px rgba(75,67,59,.09)}.docs-intro{max-width:680px;margin:0 auto 40px;text-align:center}.doc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.doc-card{background:rgba(255,255,255,.76);border:1px solid var(--line);border-radius:28px;padding:28px 23px;display:flex;flex-direction:column;align-items:flex-start;min-height:260px}.doc-card .number{font-family:Cinzel,serif;color:var(--copper);font-size:1.8rem;margin-bottom:18px}.doc-card h3{font-size:1.1rem;line-height:1.45;margin-bottom:12px}.doc-card p{font-size:.85rem;flex:1}.doc-card .btn{font-size:.63rem;padding:11px 16px;letter-spacing:.08em}.dossier-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:clamp(30px,7vw,90px);align-items:center}.dossier-cover{width:min(100%,390px);margin:auto;border-radius:3px;box-shadow:16px 20px 45px rgba(30,30,30,.16)}.dossier-copy p{max-width:560px}.note{font-size:.78rem;color:#777;max-width:850px;margin:24px auto 0;text-align:center}.footer{background:var(--night);color:#eee;padding:42px 24px;text-align:center}.footer p{color:#d0d5d5;font-size:.75rem;margin:5px 0}.footer .brand{color:#e5c4bb;margin-bottom:10px;display:block}.mobile-menu{display:none}
+@media(max-width:800px){header.nav{height:auto;min-height:74px;padding:16px 22px;flex-wrap:wrap}.navlinks{gap:16px;font-size:.64rem}.hero{padding-top:22px}.hero-image{border-bottom-right-radius:48px}.founder-grid,.dossier-grid{grid-template-columns:1fr}.portrait{height:min(125vw,600px);max-width:520px;margin:auto}.founder-copy{text-align:center}.doc-grid{grid-template-columns:1fr}.doc-card{min-height:unset}.section{padding:72px 0}.dossier-copy{text-align:center}.dossier-copy .actions{justify-content:center}}
+@media(max-width:480px){.wrap{width:calc(100% - 32px)}.brand{font-size:1rem}.navlinks{width:100%;justify-content:space-between;padding-top:8px}.hero h1{font-size:2.45rem}.hero-copy{margin-top:38px}.btn{width:100%;max-width:330px}.docs{border-radius:36px 58px 34px 45px}.section{padding:58px 0}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#inicio">Ser Soberanía</a>
+  <nav class="navlinks" aria-label="Navegación principal">
+    <a href="#fundadora">La fundadora</a>
+    <a href="#dossier">Dossier</a>
+    <a href="#admision">Admisión</a>
+  </nav>
+</header>
+<main>
+<section class="hero wrap" id="inicio">
+  <img class="hero-image" src="assets/punto-infinito.jpg" alt="Concepto visual de la instalación Punto Infinito en un paisaje antártico">
+  <div class="hero-copy">
+    <div class="eyebrow">Laboratorio Punto Infinito · Vértice Antártico</div>
+    <h1>Ser Soberanía</h1>
+    <p>Un dossier sobre identidad, autonomía y el imaginario de una instalación de investigación en la Antártida.</p>
+    <div class="actions">
+      <a class="btn" href="#admision">Explorar admisión <span aria-hidden="true">↗</span></a>
+      <a class="btn secondary" href="#dossier">Conocer el dossier</a>
+    </div>
+  </div>
+</section>
+<section class="section" id="fundadora">
+  <div class="wrap founder-grid">
+    <img class="portrait" src="assets/barbara-retrato.jpg" alt="Retrato editorial de Barbara en un entorno de investigación futurista">
+    <div class="founder-copy">
+      <div class="eyebrow">Dirección de investigación</div>
+      <h2>Dra. Barbara</h2>
+      <h3>Fundadora · Punto Infinito</h3>
+      <p>La narrativa de Ser Soberanía sitúa a Barbara al frente de un proyecto que explora, desde una perspectiva especulativa, la relación entre arquitectura, conciencia y percepción del tiempo.</p>
+      <p>Este espacio reúne los materiales visuales y documentales del proyecto. Las afirmaciones extraordinarias presentes en los documentos se presentan como parte de su universo narrativo, no como hechos científicos verificados ni como tratamiento médico.</p>
+      <div class="actions" style="justify-content:flex-start;margin-top:24px">
+        <a class="btn secondary" href="assets/barbara-laboratorio.jpg" target="_blank" rel="noopener">Ver imagen de laboratorio</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="banner wrap" aria-label="Instalación Punto Infinito">
+  <img src="assets/barbara-laboratorio.jpg" alt="Barbara frente a una interfaz translúcida en el interior de una instalación futurista">
+</section>
+<section class="section" id="dossier">
+  <div class="wrap dossier-grid">
+    <img class="dossier-cover" src="assets/dossier.jpg" alt="Portada visual del dossier Ser Soberanía">
+    <div class="dossier-copy">
+      <div class="eyebrow">Archivo del proyecto</div>
+      <h2>El universo de Punto Infinito</h2>
+      <p>El dossier oficial de Ser Soberanía reúne la presentación visual y conceptual de Punto Infinito. Abrí el documento completo para recorrer sus seis páginas.</p>
+      <div class="actions" style="justify-content:flex-start">
+        <a class="btn" href="assets/dossier-ser-soberania.pdf" target="_blank" rel="noopener">Abrir dossier PDF ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="admision">
+  <div class="wrap">
+    <div class="docs">
+      <div class="docs-intro">
+        <div class="eyebrow">Documentación</div>
+        <h2>El Punto Infinito</h2>
+        <p>Consultá los materiales de admisión y responsabilidad antes de continuar. Los documentos se abrirán en una pestaña nueva.</p>
+      </div>
+      <div class="doc-grid">
+        <article class="doc-card">
+          <div class="number">01</div>
+          <h3>Protocolo de admisión</h3>
+          <p>Fase de elegibilidad, criterios y cuestionario descritos en el documento del proyecto.</p>
+          <a class="btn" href="assets/protocolo-admision.pdf" target="_blank" rel="noopener">Abrir protocolo ↗</a>
+        </article>
+        <article class="doc-card">
+          <div class="number">02</div>
+          <h3>Acuerdo de responsabilidad</h3>
+          <p>Documento de consentimiento y declaración de responsabilidad incluido en el dossier.</p>
+          <a class="btn" href="assets/acuerdo-responsabilidad.pdf" target="_blank" rel="noopener">Abrir acuerdo ↗</a>
+        </article>
+        <article class="doc-card">
+          <div class="number">03</div>
+          <h3>Investigación · Nivel 4</h3>
+          <p>Informe conceptual sobre la singularidad geográfica y la neuroarquitectura del proyecto.</p>
+          <a class="btn" href="assets/investigacion-nivel-4.pdf" target="_blank" rel="noopener">Abrir informe ↗</a>
+        </article>
+      </div>
+      <p class="note">Nota: el contenido de los documentos incluye conceptos especulativos. No constituye evidencia científica validada, evaluación clínica ni recomendación de salud.</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <span class="brand">Ser Soberanía</span>
+  <p>Punto Infinito · Universo visual y documental</p>
+  <p>© 2026 Ser Soberanía</p>
+</footer>
+</body>
+</html>
